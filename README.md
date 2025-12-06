@@ -48,6 +48,27 @@ This assignment demonstrates the following core testing concepts:
 - Lifecycle hooks: `@BeforeAll`, `@BeforeEach`, `@AfterEach`, `@AfterAll`
 - Timeouts and disabled tests (`@Timeout`, `@Disabled`)
 - Code coverage measurement with JaCoCo
+- **Test suite organization and structuring** (should contain suite)
+
+---
+
+## ✅ Task A — JUnit 5 Test Suite Requirements (Part 2)
+
+The test suite meets the following assignment requirements:
+
+| Requirement | Status | Implementation |
+|-------------|--------|-----------------|
+| **Contains test suite** | ✅ | `ProductStockTestSuite.java` with @Suite annotation organizing all tests |
+| **@BeforeAll & @BeforeEach** | ✅ | Lifecycle hooks used for test setup and initialization |
+| **@AfterEach & @AfterAll** | ✅ | Lifecycle hooks used for test cleanup |
+| **@Test annotation** | ✅ | All 27 test methods properly annotated |
+| **@Timeout** | ✅ | Demonstrated with `quickTimeoutTest()` |
+| **@Disabled** | ✅ | Demonstrated with `futureFeatureDisabled()` |
+| **@Tag** | ✅ | Tests tagged for categorization (e.g., `@Tag("constructor")`) |
+| **@DisplayName** | ✅ | All test methods have readable display names |
+| **@Nested** | ✅ | 6 nested test classes for logical grouping (ConstructorTests, AddStockTests, ReserveReleaseTests, etc.) |
+| **@ParameterizedTest** | ✅ | Used with `@ValueSource` for multiple test inputs |
+| **Assertions** | ✅ | `assertThrows`, `assertAll`, `assertEquals`, `assertTrue`, `assertFalse` |
 
 ---
 
